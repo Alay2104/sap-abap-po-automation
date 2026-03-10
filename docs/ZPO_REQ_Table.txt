@@ -1,1 +1,48 @@
+Table Name: ZPO_REQ
+Description: Purchase Request Storage Table
 
+Delivery Class: A (Application Table)
+Data Browser/Table View Maintenance: Allowed
+
+Fields:
+
+1. MANDT
+   Data Element: MANDT
+   Type: CLNT
+   Description: Client
+
+2. REQ_ID
+   Data Element: NUM10
+   Type: NUMC (10)
+   Key Field
+   Description: Purchase Request ID
+
+3. VENDOR
+   Data Element: LIFNR
+   Type: CHAR (10)
+   Description: Vendor Number
+
+4. MATERIAL
+   Data Element: MATNR
+   Type: CHAR (18)
+   Description: Material Number
+
+5. QTY
+   Data Element: MENGE_D
+   Type: QUAN
+   Description: Quantity
+
+6. PRICE
+   Data Element: NETPR
+   Type: CURR
+   Description: Net Price
+
+7. STATUS
+   Data Element: CHAR10
+   Type: CHAR (10)
+   Description: Request Status
+
+8. PO_NUMBER
+   Data Element: EBELN
+   Type: CHAR (10)
+   Description: Purchase Order Number
