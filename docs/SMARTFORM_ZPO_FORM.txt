@@ -1,1 +1,45 @@
+Smart Form Name: ZPO_FORM
+Description: Purchase Order Print Form
 
+Purpose:
+Used to generate a printable Purchase Order document after PO creation.
+
+--------------------------------------------------
+Global Definitions
+--------------------------------------------------
+
+Import Parameters:
+- PO_NUMBER  Type: EBELN   (Purchase Order Number)
+- VENDOR     Type: LIFNR   (Vendor Number)
+- MATERIAL   Type: MATNR   (Material Number)
+- QTY        Type: MENGE_D (Quantity)
+- PRICE      Type: NETPR   (Net Price)
+
+--------------------------------------------------
+Form Layout
+--------------------------------------------------
+
+PAGE: DEFAULT
+
+MAIN WINDOW:
+
+Header Text:
+"Purchase Order"
+
+Body Content:
+
+Purchase Order Number: &PO_NUMBER&
+Vendor:                &VENDOR&
+Material:              &MATERIAL&
+Quantity:              &QTY&
+Net Price:             &PRICE&
+
+Footer Text:
+"System Generated Purchase Order"
+
+--------------------------------------------------
+Output
+--------------------------------------------------
+- Format: Printable document
+- Can be exported as PDF
+- Used for vendor communication and records
